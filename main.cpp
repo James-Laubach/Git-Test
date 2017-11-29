@@ -2,7 +2,16 @@
 
 using namespace std;
 
+int sum(int n);
 int main(){
-  cout << "Hello World" << endl;
-
+  int n;
+  cout << "Enter an integer greater than one: "; cin >> n;
+  cout << sum(n) << endl;
+}
+int sum(int n){
+  int total = 0;
+  for(int i = 0; i <= n; i++){
+    total = i + total;
+  }
+  return total;
 }
